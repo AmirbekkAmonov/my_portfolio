@@ -15,12 +15,17 @@
             <a href="#"><img src="./assets/icons/Logo2.svg" alt=""></a>
             <nav>
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Experience">Experience</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Home" data-key="home">Home</a></li>
+                    <li><a href="#Projects" data-key="projects">Projects</a></li>
+                    <li><a href="#Experience" data-key="experience">Experience</a></li>
+                    <li><a href="#Contact" data-key="contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher">
+                <button data-lang="en">English</button>
+                <button data-lang="uz">O'zbek</button>
+              </div>
+              
         </div>
     </header>
     <main>
@@ -31,23 +36,23 @@
                         <img src="./assets/images/avatar.svg" alt="Profile Image">
                     </div>
                     <div class="profile-info">
-                        <h1>Amonov Amirbek</h1>
-                        <p>Frontend Developer</p>
-                        <h2>
+                        <h1 data-key="profile_name">Amonov Amirbek</h1>
+                        <p data-key="profile_title">Frontend Developer</p>
+                        <h2 data-key="profile_description">
                             I am an aspiring frontend developer with a strong passion for creating visually appealing
                             and user-friendly interfaces. I am eager to apply my knowledge of modern web technologies
                             and frameworks to build responsive and accessible web applications.
                         </h2>
                         <div class="btn">
-                            <a href="#"><button class="contact">Get In Touch</button></a>
-                            <a href="#"><button class="download">Download CV</button></a>
+                            <button class="contact" data-key="get_in_touch">Get In Touch</button>
+                            <!-- <button class="download" data-key="download_cv">Download CV</button> -->
                         </div>
                     </div>
                 </div>
         </section>
         <section class="profile_link">
             <div class="container">
-                <h3>EXPERIENCE WITH</h3>
+                <h3 data-key="experience_with">EXPERIENCE WITH</h3>
                 <div class="profile_link_icon">
                     <a href=""><img src="./assets/icons/javascript.svg" alt=""></a>
                     <a href=""><img src="./assets/icons/nodejs.svg" alt=""></a>
@@ -59,13 +64,13 @@
         </section>
         <section id="Projects" class="projects">
             <div class="container">
-                <h3>PROJECTS</h3>
+                <h3 data-key="projects">PROJECTS</h3>
                 <div class="projects_cards">
                     <div class="projects_cards_card">
                         <img class="img" src="./assets/images/Project_1.png" alt="Project 1">
                         <div class="projects_cards_card_content">
                             <div class="projects_cards_card_content_text">
-                                <p>CLICK HERE TO VISIT</p>
+                                <p data-key="click">CLICK HERE TO VISIT</p>
                                 <h4>HTML TUTORIAL</h4>
                             </div>
                             <img src="./assets/icons/View_Icon.svg" alt="">
@@ -75,7 +80,7 @@
                         <img class="img" src="./assets/images/Project_2.png" alt="Project 2">
                         <div class="projects_cards_card_content">
                             <div class="projects_cards_card_content_text">
-                                <p>CLICK HERE TO VISIT</p>
+                                <p data-key="click">CLICK HERE TO VISIT</p>
                                 <h4>CSS TUTORIAL</h4>
                             </div>
                             <img src="./assets/icons/View_Icon.svg" alt="">
@@ -86,7 +91,7 @@
         </section>
         <section id="Experience" class="experience">
             <div class="container">
-                <h3>EXPERIENCE</h3>
+                <h3     data-key="experience">EXPERIENCE</h3>
                 <div class="experience_cards">
                     <div class="experience_cards_card">
                         <div class="experience_cards_card_text">
@@ -135,8 +140,8 @@
     </main>
     <footer id="Contact" class="contact">
         <div class="container">
-            <h3>Contact</h3>
-            <p>Passionate Front-End Developer with a strong foundation in designing and implementing dynamic,
+            <h3 data-key="contact">Contact</h3>
+            <p data-key="footer_about">Passionate Front-End Developer with a strong foundation in designing and implementing dynamic,
                 responsive, and user-friendly web interfaces. Skilled in leveraging modern front-end technologies such
                 as HTML, CSS, JavaScript, and popular frameworks like React and Vue.js. Adept at translating design
                 concepts into high-quality code, ensuring optimal performance, and enhancing the overall user
@@ -179,10 +184,11 @@
             }
         }
         function topFunction() {
-            document.body.scrollTop = 0; 
+            document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
     </script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
