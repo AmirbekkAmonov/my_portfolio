@@ -167,6 +167,11 @@ body {
   text-align: center;
   width: 60%;
 }
+@media (max-width: 700px) {
+  .profile .profile-info h2 {
+    width: 80%;
+  }
+}
 .profile .profile-info .btn {
   margin-top: 20px;
   display: flex;
@@ -228,6 +233,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 30px;
   cursor: pointer;
@@ -270,6 +276,11 @@ body {
   gap: 30px;
   margin-top: 30px;
 }
+@media (max-width: 500px) {
+  .projects .container .projects_cards {
+    flex-direction: column;
+  }
+}
 .projects .container .projects_cards_card {
   width: 35%;
   display: flex;
@@ -279,6 +290,21 @@ body {
   background-color: #2A2A2A;
   border-radius: 18px;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 700px) {
+  .projects .container .projects_cards_card {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 500px) {
+  .projects .container .projects_cards_card {
+    width: 80%;
+  }
+}
+@media (max-width: 250px) {
+  .projects .container .projects_cards_card {
+    width: 95%;
+  }
 }
 .projects .container .projects_cards_card:hover {
   cursor: pointer;
@@ -348,6 +374,11 @@ body {
           text-decoration-skip-ink: none;
   color: #5BADFF;
 }
+@media (max-width: 250px) {
+  .experience h3 {
+    font-size: 30px;
+  }
+}
 .experience_cards {
   width: 100%;
   display: flex;
@@ -370,10 +401,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 700px) {
+  .experience_cards_card_text {
+    flex-direction: column;
+  }
+}
 .experience_cards_card_text .cards_text {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media (max-width: 550px) {
+  .experience_cards_card_text .cards_text {
+    flex-direction: column;
+  }
 }
 .experience_cards_card_text .cards_text h4 {
   font-size: 21.74px;
@@ -459,6 +500,13 @@ body {
   color: #C5C5C5;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 335px) {
+  .contact_icon a {
+    width: 100%;
+    font-size: 14px;
+    gap: 2px;
+  }
+}
 .contact_icon a:hover {
   transform: scale(1.01);
   color: #f5f4f4;
@@ -468,12 +516,22 @@ body {
   height: auto;
   cursor: pointer;
 }
+@media (max-width: 335px) {
+  .contact_icon img {
+    width: 20px;
+  }
+}
 .contact_icon2 {
   display: flex;
   justify-content: left;
   align-items: center;
   gap: 15px;
   margin-top: 30px;
+}
+@media (max-width: 300px) {
+  .contact_icon2 {
+    flex-wrap: wrap;
+  }
 }
 .contact_icon2 a {
   text-decoration: none;
