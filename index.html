@@ -22,10 +22,16 @@
                 </ul>
             </nav>
             <div class="language-switcher">
-                <button data-lang="en">English</button>
-                <button data-lang="uz">O'zbek</button>
-              </div>
-              
+                <button class="dropdown-btn" >
+                    <span class="language-text" data-key="language">Language</span>
+                    <span class="arrow">&#x25BC;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" data-lang="en">ENG</a>
+                    <a href="#" data-lang="ru">RU</a>
+                    <a href="#" data-lang="uz">UZ</a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -91,7 +97,7 @@
         </section>
         <section id="Experience" class="experience">
             <div class="container">
-                <h3     data-key="experience">EXPERIENCE</h3>
+                <h3 data-key="experience">EXPERIENCE</h3>
                 <div class="experience_cards">
                     <div class="experience_cards_card">
                         <div class="experience_cards_card_text">
@@ -141,7 +147,8 @@
     <footer id="Contact" class="contact">
         <div class="container">
             <h3 data-key="contact">Contact</h3>
-            <p data-key="footer_about">Passionate Front-End Developer with a strong foundation in designing and implementing dynamic,
+            <p data-key="footer_about">Passionate Front-End Developer with a strong foundation in designing and
+                implementing dynamic,
                 responsive, and user-friendly web interfaces. Skilled in leveraging modern front-end technologies such
                 as HTML, CSS, JavaScript, and popular frameworks like React and Vue.js. Adept at translating design
                 concepts into high-quality code, ensuring optimal performance, and enhancing the overall user
