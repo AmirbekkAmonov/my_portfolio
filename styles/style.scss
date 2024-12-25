@@ -83,11 +83,21 @@ body {
                 }
             }
         }
+
+        @media (max-width: 700px) {
+            ul {
+                display: none;
+            }
+
+        }
     }
 
     .language-switcher {
         position: relative;
         display: inline-block;
+        @media (max-width: 700px) {
+            display: none;
+        }
     }
 
     .dropdown-btn {
@@ -129,7 +139,21 @@ body {
     .language-switcher.active .dropdown-content {
         display: block;
     }
+    .menu{
+        display: none;
+        @media (max-width: 700px) {
+            display: block;
+        }
+        img {
+           width: 45px;
+           cursor: pointer;
+       }
+
+    }
+    
+
 }
+
 
 .header.scrolled {
     background: rgba(26, 26, 26, 0.9);

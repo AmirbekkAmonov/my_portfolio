@@ -77,9 +77,19 @@ body {
 .header nav ul li a:hover::after {
   width: 100%;
 }
+@media (max-width: 700px) {
+  .header nav ul {
+    display: none;
+  }
+}
 .header .language-switcher {
   position: relative;
   display: inline-block;
+}
+@media (max-width: 700px) {
+  .header .language-switcher {
+    display: none;
+  }
 }
 .header .dropdown-btn {
   background-color: transparent;
@@ -114,6 +124,18 @@ body {
 }
 .header .language-switcher.active .dropdown-content {
   display: block;
+}
+.header .menu {
+  display: none;
+}
+@media (max-width: 700px) {
+  .header .menu {
+    display: block;
+  }
+}
+.header .menu img {
+  width: 45px;
+  cursor: pointer;
 }
 
 .header.scrolled {
